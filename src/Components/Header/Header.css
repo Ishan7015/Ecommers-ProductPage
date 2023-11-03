@@ -1,0 +1,70 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #2874f0;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    font-size: 30px;
+}
+
+.logo-div p{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 238, 0);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header .logo{
+    height: 40px;
+    border: 2px solid rgb(238, 255, 0);
+    padding: 3px;
+    border-radius: 2em;
+    box-shadow: 0px 0px 5px rgb(128, 94, 0);
+    margin-right: 10px;
+}
+
+.header .profile{
+    height: 50px;
+}
+
+.header input{
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(241, 241, 241); 
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 500px;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    p{
+        display: none;
+    }
+
+    .filter-icon{
+        filter: invert();
+    }
+
+    .header .search-bar{
+        font-size: 2vw;
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .header .search-bar{
+        font-size: 3vw;
+    }
+
+}

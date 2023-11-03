@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar{
+    background-color: white;
+    margin: 0.5em;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.096);
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar h6 {
+    margin:0;
+    font-size: 1em;
+    font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidebar div{
+    text-align: left;
+    margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar li{
+    text-align: left;
+    padding: 0;
+    list-style: none;
+    margin: 5px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar input{
+    margin-right: 10px;
+}
+
+.sidebar ul{
+    margin: 10px 0 25px 0;
+    padding: 0;
+}
+
+.body .product-display{
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0.5em;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.096);
+}
+
+.app-profile{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    color: white;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.439);
+}
+
+.hide{
+    display: none;
 }
